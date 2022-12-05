@@ -1,7 +1,7 @@
 require 'spec_helper'
 require './lib/game'
 require './lib/simple_game'
-require 'pry'
+
 RSpec.describe SimpleGame do
     before :each do
         @simple_game = SimpleGame.new(5)
@@ -36,9 +36,11 @@ RSpec.describe SimpleGame do
         expect(@simple_game.get_horizontal_directions(@simple_game.grid)).to eq("LEFT\n").or eq("RIGHT\n")
     end
 
+    # For the test below, we explicitly define the coordinates of the princess and hero to avoid errors in testing due to the random corner position of the princess.
+    
     it 'prints full path to princess' do
         @simple_game.grid = ['p--', '-m-', '---']
         @simple_game.size = 3
-        expect{ @simple_game.display_path_to_princess }.to output("UP\nLEFT\n").to_stdout
+        expect { @simple_game.display_path_to_princess }.to output("UP\nLEFT\n").to_stdout
     end
 end
