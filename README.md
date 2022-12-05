@@ -33,7 +33,7 @@ TESTED WITH
 ---
 ### Instructions for executing the following code blocks in Hacker Ranks: 
   <br/>
-  - Navigate to the Hacker Ranks code editor, and select 'Ruby' from the language selector at the top of the editor
+  - Navigate to the Hacker Ranks code editor in the challenge page, and select 'Ruby' from the language selector at the top of the editor
   <br/>
   - Delete <em>all</em> of the existing ruby code in the editor</li>
   <br/>
