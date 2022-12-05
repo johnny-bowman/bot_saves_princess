@@ -14,12 +14,10 @@ def get_horizontal_directions(grid)
     end
 end
 
-m = gets.to_i
-
-grid = Array.new(m)
-
-(0...m).each do |i|
-    grid[i] = gets.strip
+def displayPathtoPrincess(n,grid)
+    vert_direction = get_vertical_directions(grid)
+    horiz_direction = get_horizontal_directions(grid)
+    steps_to_edge = (n / 2).ceil
+    puts vert_direction * steps_to_edge
+    puts horiz_direction * steps_to_edge
 end
-
-# displayPathtoPrincess(m,grid)
