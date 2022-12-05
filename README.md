@@ -29,7 +29,7 @@ TESTED WITH
 * [Pry](https://pry.github.io/)
 * [Simplecov](https://github.com/simplecov-ruby/simplecov)
 
-## Hacker Rank Solutions
+## Hacker Rank Solutions (copy-and-paste-able for Hacker Rank)
 ---
 ### Instructions for executing the following code blocks in Hacker Ranks: 
   <br/>
