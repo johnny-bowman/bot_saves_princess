@@ -21,3 +21,13 @@ def displayPathtoPrincess(n,grid)
     puts vert_direction * steps_to_edge
     puts horiz_direction * steps_to_edge
 end
+
+# m = gets.to_i
+
+# grid = Array.new(m)
+
+# (0...m).each do |i|
+#     grid[i] = gets.strip
+# end
+
+# # displayPathtoPrincess(m,grid)
