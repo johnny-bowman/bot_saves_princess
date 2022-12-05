@@ -1,7 +1,7 @@
 require 'spec_helper'
 require './lib/game'
 
-RSpec.describe "Game" do
+RSpec.describe Game do
     before :each do
         @game = Game.new(5) 
     end
