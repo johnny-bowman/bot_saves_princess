@@ -22,4 +22,11 @@ RSpec.describe "Hacker Rank Solution 1" do
         expect(get_horizontal_directions(@grid_3)).to eq("LEFT\n")
         expect(get_horizontal_directions(@grid_4)).to eq("RIGHT\n")
     end
+
+    it 'displays full path to princess' do
+        expect { displayPathtoPrincess(5, @grid_1) }.to output("UP\nUP\nRIGHT\nRIGHT\n").to_stdout
+        expect { displayPathtoPrincess(5, @grid_2) }.to output("UP\nUP\nLEFT\nLEFT\n").to_stdout
+        expect { displayPathtoPrincess(5, @grid_3) }.to output("DOWN\nDOWN\nLEFT\nLEFT\n").to_stdout
+        expect { displayPathtoPrincess(5, @grid_4) }.to output("DOWN\nDOWN\nRIGHT\nRIGHT\n").to_stdout
+    end
 end
